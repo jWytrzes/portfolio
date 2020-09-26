@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../templates/Layout"
 
-export default function Home() {
+const Page404 = () => {
   return (
     <Layout>
-      <div>index</div>
+      <div>Page not found</div>
     </Layout>
   )
 }
+
+export default Page404
