@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -28,6 +28,6 @@ const GlobalStyle = createGlobalStyle`
   input, a, button, textarea {
     font-family: inherit;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
