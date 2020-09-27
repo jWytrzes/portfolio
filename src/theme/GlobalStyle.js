@@ -4,10 +4,12 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
