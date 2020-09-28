@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyledLink } from './styles-MenuItem';
+import { StyledLi, StyledLink } from './styles-MenuItem';
 
 const MenuItem = ({ item }) => {
 	return (
-		<li>
+		<StyledLi>
 			<StyledLink to={item.link}> {item.text} </StyledLink>
-		</li>
+		</StyledLi>
 	);
 };
 

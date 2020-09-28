@@ -30,6 +30,10 @@ export const StyledButton = styled.button`
 				}
 			}
 		`}
+
+	@media(min-width: 992px) {
+		display: none;
+	}
 `;
 
 export const StyledBox = styled.span`

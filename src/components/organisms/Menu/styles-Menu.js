@@ -8,4 +8,9 @@ export const StyledWrapper = styled.div`
 	left: 0;
 	width: 100%;
 	padding: 15px;
+
+	@media (min-width: 992px) {
+		padding: 0;
+		top: 25px;
+	}
 `;

@@ -11,10 +11,21 @@ export const StyledNav = styled.nav`
 	height: 100vh;
 	padding: 68px 25px 25px;
 	background: ${({ theme }) => theme.accent} url(${mobileHero}) no-repeat fixed
-		center/cover;
+		top/cover;
 	transform: ${({ active }) =>
 		active ? 'translateX(0)' : 'translateX(100vw)'};
 	transition: transform 0.3s ease-in-out;
+
+	@media (min-width: 992px) {
+		position: relative;
+		transform: none;
+		background: none;
+		height: unset;
+		top: unset;
+		left: unset;
+		max-width: 100%;
+		padding: 0;
+	}
 `;
 
 export const StyledUl = styled.ul`
@@ -28,4 +39,15 @@ export const StyledUl = styled.ul`
 	justify-content: space-between;
 	height: 55%;
 	min-height: 300px;
+
+	@media (min-width: 992px) {
+		height: unset;
+		min-height: unset;
+		flex-direction: row;
+		width: fit-content;
+		background: ${({ theme }) => theme.base};
+		box-shadow: 0px 5px 15px ${({ theme }) => theme.shadow};
+		border-radius: 66px;
+		padding: 16px;
+	}
 `;

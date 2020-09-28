@@ -8,4 +8,12 @@ export const StyledUl = styled.ul`
 	width: 100%;
 	align-items: center;
 	justify-content: flex-end;
+
+	@media (min-width: 992px) {
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+		flex-direction: column;
+		width: fit-content;
+	}
 `;
