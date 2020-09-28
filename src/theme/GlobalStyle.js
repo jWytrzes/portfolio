@@ -1,13 +1,15 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -26,6 +28,6 @@ const GlobalStyle = createGlobalStyle`
   input, a, button, textarea {
     font-family: inherit;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
