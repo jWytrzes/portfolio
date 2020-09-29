@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyledLi, StyledLink } from './styles-MenuItem';
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ item, ...props }) => {
 	return (
-		<StyledLi>
+		<StyledLi {...props}>
 			<StyledLink to={item.link}> {item.text} </StyledLink>
 		</StyledLi>
 	);
