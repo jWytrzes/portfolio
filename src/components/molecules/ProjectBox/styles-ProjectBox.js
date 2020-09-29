@@ -31,10 +31,14 @@ export const StyledLabelsWrapper = styled.div`
 `;
 
 export const StyledButton = styled(Button)`
-	padding: 11px 35px;
+	padding: 8px 15px;
+	min-width: 90px;
+	text-decoration: none;
 `;
 
 export const StyledFooter = styled.footer`
+	display: flex;
+
 	${StyledButton} {
 		margin-right: 20px;
 	}
@@ -42,4 +46,8 @@ export const StyledFooter = styled.footer`
 
 export const StyledIcon = styled.svg`
 	height: 16px;
+`;
+
+export const StyledLinkText = styled.span`
+	margin-left: 10px;
 `;
