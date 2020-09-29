@@ -9,6 +9,7 @@ import {
 	StyledHeroText,
 	StyledScrollLink,
 } from './styles-Hero';
+import { ReactComponent as ChevronsDown } from '../../images/chevrons-down.svg';
 
 const Hero = () => {
 	return (
@@ -24,19 +25,7 @@ const Hero = () => {
 					<StyledSmall>front-end developer</StyledSmall>
 				</StyledHeroText>
 				<StyledScrollLink to="#projects">
-					<svg width={27.88} height={33.45} viewBox="0 0 32.119 37.073">
-						<defs>
-							<style>
-								{
-									'.prefix__a{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}'
-								}
-							</style>
-						</defs>
-						<path
-							className="prefix__a"
-							d="M2.121 21.634l13.938 13.938 13.938-13.938M2.121 2.121l13.938 13.938L29.997 2.121"
-						/>
-					</svg>
+					<ChevronsDown />
 				</StyledScrollLink>
 				<SocialMedia />
 			</SectionTemplate>

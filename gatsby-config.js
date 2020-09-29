@@ -10,7 +10,6 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
-		'gatsby-plugin-svgr',
 		{
 			resolve: `gatsby-plugin-prefetch-google-fonts`,
 			options: {
@@ -28,6 +27,14 @@ module.exports = {
 			options: {
 				name: `images`,
 				path: path.join(__dirname, `src`, `images`),
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-svgr',
+			options: {
+				svgoConfig: {
+					plugins: [{ removeViewBox: false }],
+				},
 			},
 		},
 	],

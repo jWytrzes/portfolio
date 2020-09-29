@@ -40,6 +40,6 @@ export const StyledFooter = styled.footer`
 	}
 `;
 
-export const StyledSvg = styled.svg`
+export const StyledIcon = styled.svg`
 	height: 16px;
 `;

@@ -17,3 +17,14 @@ export const StyledUl = styled.ul`
 		width: fit-content;
 	}
 `;
+
+export const StyledIcon = styled.svg`
+	width: 24px;
+	height: auto;
+	fill: ${({ theme }) => theme.base};
+	transition: fill 0.2s ease-in-out;
+
+	@media (min-width: 992px) {
+		width: 36px;
+	}
+`;
