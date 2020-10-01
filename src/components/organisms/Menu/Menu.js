@@ -6,14 +6,14 @@ import { StyledWrapper } from './styles-Menu';
 const Menu = () => {
 	const [isMenuActive, setIsMenuActive] = useState(false);
 
-	const toggleMenu = () => {
-		setIsMenuActive(!isMenuActive);
+	const toggleMenu = (action = !isMenuActive) => {
+		setIsMenuActive(action);
 	};
 
 	return (
 		<StyledWrapper>
-			<BurgerButton active={isMenuActive} onClick={toggleMenu} />
-			<Navigation active={isMenuActive} />
+			<BurgerButton active={isMenuActive} onClick={() => toggleMenu()} />
+			<Navigation active={isMenuActive} toggleMenu={toggleMenu} />
 		</StyledWrapper>
 	);
 };

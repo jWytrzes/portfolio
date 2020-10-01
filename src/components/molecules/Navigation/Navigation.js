@@ -11,12 +11,16 @@ const menuItems = [
 	{ text: 'Contact', link: '#contact' },
 ];
 
-const Navigation = ({ active }) => {
+const Navigation = ({ active, toggleMenu }) => {
 	return (
 		<StyledNav active={active}>
 			<StyledUl>
 				{menuItems.map((item) => (
-					<MenuItem item={item} key={item.link} />
+					<MenuItem
+						item={item}
+						key={item.link}
+						onClick={() => toggleMenu(false)}
+					/>
 				))}
 			</StyledUl>
 		</StyledNav>

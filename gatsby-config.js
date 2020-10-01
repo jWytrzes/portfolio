@@ -29,5 +29,13 @@ module.exports = {
 				path: path.join(__dirname, `src`, `images`),
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-svgr',
+			options: {
+				svgoConfig: {
+					plugins: [{ removeViewBox: false }],
+				},
+			},
+		},
 	],
 };

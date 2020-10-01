@@ -2,17 +2,25 @@ import styled, { css } from 'styled-components';
 
 export const StyledButton = styled.button`
 	padding: 10px;
-	height: 38px;
-	display: inline-block;
+	height: 42px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 	background-color: transparent;
 	border: 0;
 	margin: 0 0 0 auto;
+	background-color: ${({ theme }) => theme.accent};
+	border-radius: 11px;
 	z-index: 999;
+	transition: background-color 0.2s ease-in-out;
+	will-change: background-color;
 
 	${({ active }) =>
 		active &&
 		css`
+			background-color: ${({ theme }) => theme.base2};
+
 			${StyledInner} {
 				background-color: transparent;
 

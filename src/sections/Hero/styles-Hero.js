@@ -49,11 +49,11 @@ export const StyledHeroText = styled.div`
 
 const scrollAnimation = keyframes`
 	0%, 50%, 100% {
-		transform: translateY(0%);
+		transform: translateY(-10%);
 	}
 
 	30% {
-		transform: translateY(50%);
+		transform: translateY(40%);
 	}
 `;
 
