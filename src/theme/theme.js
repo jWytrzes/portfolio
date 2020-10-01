@@ -8,7 +8,7 @@ const theme = {
 	accentDarker: 'rgba(5, 157, 154, 1)',
 	accentSecondaryDarker: 'rgba(168, 225, 225, 1)',
 	red: 'rgba(219, 55, 55, 1)',
-	shadow: 'rgba(50, 125, 123, 0.07)',
+	shadow: 'rgba(50, 125, 123, 0.1)',
 };
 
 export default theme;
