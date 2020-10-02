@@ -16,8 +16,12 @@ export const StyledA = styled.a`
 	height: fit-content;
 	padding: 5px;
 
+	svg path {
+		transition: fill 0.3s ease-out;
+	}
+
 	&:hover {
-		svg {
+		svg path {
 			fill: ${({ theme }) => theme.textPrimary};
 		}
 	}

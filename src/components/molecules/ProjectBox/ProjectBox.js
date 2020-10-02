@@ -11,6 +11,7 @@ import {
 	StyledButton,
 	StyledIcon,
 	StyledLinkText,
+	StyledP,
 } from './styles-ProjectBox';
 import { ReactComponent as CodeIcon } from '../../../images/code.svg';
 import { ReactComponent as LinkIcon } from '../../../images/link.svg';
@@ -29,7 +30,7 @@ const ProjectBox = ({ item }) => {
 					))}
 				</StyledLabelsWrapper>
 				<H3> {item.title} </H3>
-				<p> {item.description} </p>
+				<StyledP> {item.description} </StyledP>
 				<StyledFooter>
 					<StyledButton as="a" target="_blank" href={item.links.repo}>
 						<StyledIcon as={CodeIcon} />
