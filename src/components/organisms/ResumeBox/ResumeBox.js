@@ -7,7 +7,7 @@ const ResumeBox = ({ header, data, timeline }) => {
 	return (
 		<StyledWrapper>
 			<ResumeTitle as="h3">{header}</ResumeTitle>
-			<StyledContent>
+			<StyledContent timeline={timeline}>
 				{data.map((item) => (
 					<ResumeItem
 						title={item.title}
@@ -15,6 +15,7 @@ const ResumeBox = ({ header, data, timeline }) => {
 						description={item.description}
 						link={item.link}
 						key={item.time}
+						timeline={timeline}
 					/>
 				))}
 			</StyledContent>

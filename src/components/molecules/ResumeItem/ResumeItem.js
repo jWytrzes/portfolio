@@ -7,7 +7,7 @@ import {
 	StyledLink,
 } from './styles-ResumeItem';
 
-const ResumeItem = ({ title, time, description, link }) => {
+const ResumeItem = ({ title, time, description, link, timeline }) => {
 	return (
 		<StyledWrapper>
 			<H4>
@@ -19,7 +19,7 @@ const ResumeItem = ({ title, time, description, link }) => {
 					title
 				)}
 			</H4>
-			<StyledTime>{time}</StyledTime>
+			<StyledTime timeline={timeline}>{time}</StyledTime>
 			<StyledParagraph> {description} </StyledParagraph>
 		</StyledWrapper>
 	);
