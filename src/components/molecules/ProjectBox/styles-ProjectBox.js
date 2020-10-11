@@ -26,8 +26,8 @@ export const StyledThumbnailWrapper = styled.div`
 	overflow: hidden;
 
 	@media (min-width: 768px) {
-		width: 37.75%;
-		flex: 0 0 37.75%;
+		width: 36.5%;
+		flex: 0 0 36.5%;
 		display: flex;
 	}
 `;
@@ -59,6 +59,7 @@ export const StyledLabelsWrapper = styled.div`
 
 export const StyledP = styled.p`
 	margin-top: 0;
+	line-height: 1.68;
 
 	@media (min-width: 1200px) {
 		font-size: 1.6rem;
