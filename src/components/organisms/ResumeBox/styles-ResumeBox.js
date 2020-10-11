@@ -27,6 +27,10 @@ export const StyledContent = styled.div`
 				top: 0;
 				left: 6px;
 				background: ${({ theme }) => theme.accent};
+
+				@media (min-width: 768px) {
+					left: 29px;
+				}
 			}
 		`}
 `;

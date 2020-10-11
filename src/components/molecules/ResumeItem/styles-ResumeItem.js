@@ -38,7 +38,7 @@ export const StyledTime = styled.span`
 				left: -40px;
 
 				@media (min-width: 768px) {
-					left: -58px;
+					left: -35px;
 				}
 			}
 		`}
