@@ -34,7 +34,7 @@ const About = () => {
 							finibus eros quis interdum. In cursus urna dui, non sodales mi
 							blandit at. Aenean sed arcu eu neque suscipit sodales.
 						</Paragraph>
-						<Button as={Link} to="#cv">
+						<Button as={Link} to="#resume">
 							See my resume
 						</Button>
 					</StyledTextWrapper>

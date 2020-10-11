@@ -7,18 +7,30 @@ export const StyledWrapper = styled.div`
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+
+	@media (min-width: 992px) {
+		margin-bottom: 3rem;
+	}
 `;
 
 export const StyledTime = styled.span`
 	font-size: 1.2rem;
 	line-height: 1.5;
 	opacity: 0.48;
+
+	@media (min-width: 992px) {
+		font-size: 1.4rem;
+	}
 `;
 
 export const StyledParagraph = styled(Paragraph)`
 	font-size: 1.5rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
+
+	@media (min-width: 992px) {
+		font-size: 1.6rem;
+	}
 `;
 
 export const StyledLink = styled.a`

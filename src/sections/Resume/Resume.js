@@ -6,14 +6,15 @@ import Button from '../../components/atoms/Button/Button';
 import ResumeBox from '../../components/organisms/ResumeBox/ResumeBox';
 import ListItem from '../../components/atoms/ListItem/ListItem';
 import ResumeTitle from '../../components/atoms/ResumeTitle/ResumeTitle';
+import LanguageItem from '../../components/molecules/LanguageItem/LanguageItem';
 import {
 	StyledResume,
 	StyledInner,
 	StyledList,
 	StyledBoxWrapper,
 	StyledLangs,
+	StyledInnerColumn,
 } from './styles-Resume';
-import LanguageItem from '../../components/molecules/LanguageItem/LanguageItem';
 
 const resumeData = {
 	experience: [
@@ -79,7 +80,7 @@ const resumeData = {
 
 const Resume = () => {
 	return (
-		<StyledResume id="cv">
+		<StyledResume id="resume">
 			<SectionTemplate>
 				<H2> Curriculum Vitae </H2>
 				<div>
@@ -93,7 +94,7 @@ const Resume = () => {
 					</Button>
 				</div>
 				<StyledInner>
-					<div>
+					<StyledInnerColumn>
 						<ResumeBox
 							header="Experience"
 							data={resumeData.experience}
@@ -107,11 +108,12 @@ const Resume = () => {
 								))}
 							</StyledList>
 						</StyledBoxWrapper>
-					</div>
-					<div>
+					</StyledInnerColumn>
+					<StyledInnerColumn>
 						<ResumeBox header="Education" data={resumeData.education} />
 						<ResumeBox header="Finished Courses" data={resumeData.courses} />
 						<StyledBoxWrapper>
+							<ResumeTitle>Languages</ResumeTitle>
 							<StyledLangs>
 								{resumeData.languages.map((item) => (
 									<LanguageItem
@@ -122,7 +124,7 @@ const Resume = () => {
 								))}
 							</StyledLangs>
 						</StyledBoxWrapper>
-					</div>
+					</StyledInnerColumn>
 				</StyledInner>
 			</SectionTemplate>
 		</StyledResume>
