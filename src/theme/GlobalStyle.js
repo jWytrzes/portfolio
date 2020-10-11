@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.base};
     color: ${({ theme }) => theme.textPrimary};
 
-    @media(min-width: 1200px) {
+    @media(min-width: 992px) {
       font-size: 1.6rem;
     }
   }
