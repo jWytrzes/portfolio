@@ -62,7 +62,6 @@ export const StyledP = styled.p`
 	line-height: 1.68;
 
 	@media (min-width: 1200px) {
-		font-size: 1.6rem;
 		margin-bottom: 2rem;
 	}
 `;

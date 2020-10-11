@@ -5,6 +5,8 @@ export const StyledWrapper = styled.div`
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+	justify-content: ${({ verticalCenter }) =>
+		verticalCenter ? 'center' : 'flex-start'};
 
 	@media (min-width: 1280px) {
 		max-width: 1250px;

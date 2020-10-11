@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: Montserrat;
     background-color: ${({ theme }) => theme.base};
     color: ${({ theme }) => theme.textPrimary};
+
+    @media(min-width: 1200px) {
+      font-size: 1.6rem;
+    }
   }
 
   *, *::before, *::after {

@@ -9,6 +9,7 @@ const Button = styled.button`
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
 	transition: background-color 0.3s ease-out;
 	will-change: background-color;
 
