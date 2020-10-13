@@ -46,7 +46,7 @@ const resumeData = {
 		{
 			title: 'Computer Science',
 			time: 'october 2018 - present | Rzeszów University of Technology',
-			description: 'Engineering studies, full-time',
+			description: 'Bachelor of Engineering, full-time',
 		},
 	],
 	courses: [
