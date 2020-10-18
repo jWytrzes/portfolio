@@ -9,10 +9,14 @@ const Input = styled.textarea`
 	padding: 15px;
 	border-radius: 5px;
 	min-height: 120px;
+	font-size: 1.4rem;
 
 	&::placeholder {
 		color: inherit;
 		opacity: 0.75;
+	}
+	@media (min-width: 992px) {
+		font-size: 1.6rem;
 	}
 `;
 

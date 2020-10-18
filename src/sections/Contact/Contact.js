@@ -25,7 +25,7 @@ const Contact = () => {
 					<StyledLeftColumn>
 						<img src={contactIllustration} alt="" />
 						<StyledParagraph>
-							Use the form or write me an e-mail:{' '}
+							Use the form or write me an e-mail: <br />
 							<StyledA href="mailto:joannawytrzes@gmail.com">
 								<span>joannawytrzes@gmail.com</span>
 							</StyledA>
@@ -52,10 +52,10 @@ const Contact = () => {
 						</StyledForm>
 					</StyledRightColumn>
 				</StyledInner>
-				<StyledAttribution href="https://www.freepik.com/vectors/technology">
-					Technology vector created by freepik - www.freepik.com
-				</StyledAttribution>
 			</SectionTemplate>
+			<StyledAttribution href="https://www.freepik.com/vectors/technology">
+				Technology vector created by freepik - www.freepik.com
+			</StyledAttribution>
 		</StyledFooter>
 	);
 };

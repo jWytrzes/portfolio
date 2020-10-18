@@ -8,10 +8,15 @@ const Input = styled.input`
 	width: 100%;
 	padding: 15px;
 	border-radius: 5px;
+	font-size: 1.4rem;
 
 	&::placeholder {
 		color: inherit;
 		opacity: 0.75;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1.6rem;
 	}
 `;
 

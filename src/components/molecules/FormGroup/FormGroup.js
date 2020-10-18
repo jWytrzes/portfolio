@@ -16,6 +16,11 @@ const FormGroup = styled.div`
 		transition: transform 0.2s ease-out;
 		background-color: ${({ theme }) => theme.accent};
 		padding: 0 5px;
+		font-weight: 600;
+
+		@media (min-width: 992px) {
+			font-size: 1.4rem;
+		}
 	}
 `;
 

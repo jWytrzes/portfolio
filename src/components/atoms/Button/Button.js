@@ -13,6 +13,7 @@ const Button = styled.button`
 	text-decoration: none;
 	line-height: 1;
 	font-size: inherit;
+	cursor: pointer;
 	transition: background-color 0.3s ease-out;
 	will-change: background-color;
 
