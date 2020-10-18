@@ -1,51 +1,62 @@
 import React from 'react';
 import SectionTemplate from '../../templates/SectionTemplate/SectionTemplate';
 import contactIllustration from '../../images/contact-illustration.svg';
-import Paragraph from '../../components/atoms/Paragraph/Paragraph';
-import Button from '../../components/atoms/Button/Button';
+import FormGroup from '../../components/molecules/FormGroup/FormGroup';
+import Input from '../../components/atoms/Input/Input';
+import Textarea from '../../components/atoms/Textarea/Textarea';
+import {
+	StyledFooter,
+	StyledInner,
+	StyledLeftColumn,
+	StyledRightColumn,
+	StyledParagraph,
+	StyledA,
+	StyledForm,
+	StyledButton,
+	StyledAttribution,
+	StyledRequired,
+} from './styles-Contact';
 
 const Contact = () => {
 	return (
-		<footer id="contact">
+		<StyledFooter id="contact">
 			<SectionTemplate>
-				<div>
-					<div>
+				<StyledInner>
+					<StyledLeftColumn>
 						<img src={contactIllustration} alt="" />
-						<Paragraph>
+						<StyledParagraph>
 							Use the form or write me an e-mail:{' '}
-							<a href="mailto:joannawytrzes@gmail.com">
-								joannawytrzes@gmail.com
-							</a>
-						</Paragraph>
-					</div>
-					<div>
-						<form>
-							<div>
+							<StyledA href="mailto:joannawytrzes@gmail.com">
+								<span>joannawytrzes@gmail.com</span>
+							</StyledA>
+						</StyledParagraph>
+					</StyledLeftColumn>
+					<StyledRightColumn>
+						<StyledForm>
+							<FormGroup>
+								<Input type="text" id="name" />
 								<label htmlFor="name">Name</label>
-								<input type="text" id="name" />
-							</div>
+							</FormGroup>
 
-							<div>
+							<FormGroup>
+								<Input type="text" id="email" placeholder="your@email.com" />
 								<label htmlFor="email">
-									E-mail <span>*</span>{' '}
+									E-mail <StyledRequired>*</StyledRequired>
 								</label>
-								<input type="text" id="email" />
-							</div>
-							<div>
+							</FormGroup>
+							<FormGroup>
+								<Textarea name="message" id="message"></Textarea>
 								<label htmlFor="message">Message</label>
-								<textarea name="message" id="message"></textarea>
-							</div>
-							<Button secondary> Send message </Button>
-						</form>
-					</div>
-				</div>
-			</SectionTemplate>
-			<div>
-				<a href="https://www.freepik.com/vectors/technology">
+							</FormGroup>
+							<StyledButton secondary> Send message </StyledButton>
+						</StyledForm>
+					</StyledRightColumn>
+				</StyledInner>
+				<StyledAttribution href="https://www.freepik.com/vectors/technology">
 					Technology vector created by freepik - www.freepik.com
-				</a>
-			</div>
-		</footer>
+				</StyledAttribution>
+			</SectionTemplate>
+		</StyledFooter>
 	);
 };
 
