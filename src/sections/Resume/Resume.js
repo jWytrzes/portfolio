@@ -46,7 +46,7 @@ const resumeData = {
 		{
 			title: 'Computer Science',
 			time: 'october 2018 - present | Rzeszów University of Technology',
-			description: 'Engineering studies, full-time',
+			description: 'Bachelor of Engineering, full-time',
 		},
 	],
 	courses: [
@@ -86,8 +86,8 @@ const Resume = () => {
 				<div>
 					<Paragraph noTopMargin>
 						Below you can find a brief summary of my skills and experience. If
-						you are interested you can download my full CV/resume clicking the
-						button below.
+						you are interested you can download my full CV/resume by clicking
+						the button below.
 					</Paragraph>
 					<Button as="a" href="./Joanna_Wytrzęś_CV.pdf" download>
 						Download CV
