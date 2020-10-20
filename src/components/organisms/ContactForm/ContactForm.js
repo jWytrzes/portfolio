@@ -15,11 +15,16 @@ const ContactForm = () => {
 			<input type="hidden" name="bot-field" />
 			<input type="hidden" name="form-name" value="contact" />
 			<FormGroup>
-				<Input type="text" id="name" />
+				<Input type="text" id="name" name="name" />
 				<label htmlFor="name">Name</label>
 			</FormGroup>
 			<FormGroup>
-				<Input type="text" id="email" placeholder="your@email.com" />
+				<Input
+					type="text"
+					id="email"
+					placeholder="your@email.com"
+					name="email"
+				/>
 				<label htmlFor="email">
 					E-mail <StyledRequired>*</StyledRequired>
 				</label>
