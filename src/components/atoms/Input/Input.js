@@ -12,7 +12,7 @@ const Input = styled.input`
 
 	&::placeholder {
 		color: inherit;
-		opacity: 0.75;
+		opacity: 0.6;
 	}
 
 	@media (min-width: 992px) {
