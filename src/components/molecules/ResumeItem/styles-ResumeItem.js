@@ -53,37 +53,3 @@ export const StyledParagraph = styled(Paragraph)`
 		font-size: 1.6rem;
 	}
 `;
-
-export const StyledLink = styled.a`
-	text-decoration: none;
-	color: ${({ theme }) => theme.accent};
-	display: inline-flex;
-	position: relative;
-	transition: color 0.3s ease-out;
-
-	span {
-		position: relative;
-		z-index: 9;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: ${({ theme }) => theme.accentSecondary};
-		bottom: 0;
-		left: 0;
-		z-index: 0;
-		transform: translateY(24%) scaleY(0.42);
-		transition: transform 0.3s ease-out;
-	}
-
-	&:hover {
-		color: ${({ theme }) => theme.accentDarker};
-
-		&::before {
-			transform: translateY(0%) scaleY(1);
-		}
-	}
-`;

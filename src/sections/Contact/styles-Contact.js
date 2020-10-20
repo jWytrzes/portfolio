@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import mobileFooter from '../../images/footer-mobile.svg';
 import desktopFooter from '../../images/footer-desktop.svg';
 import Paragraph from '../../components/atoms/Paragraph/Paragraph';
-import Button from '../../components/atoms/Button/Button';
+import A from '../../components/atoms/A/A';
 
 export const StyledFooter = styled.footer`
 	background: ${({ theme }) => theme.accent} url(${mobileFooter}) no-repeat
@@ -60,52 +60,9 @@ export const StyledParagraph = styled(Paragraph)`
 	}
 `;
 
-export const StyledA = styled.a`
-	text-decoration: none;
-	color: ${({ theme }) => theme.textPrimary};
+export const StyledA = styled(A)`
 	font-weight: 600;
-	display: inline-flex;
-	position: relative;
-	transition: color 0.3s ease-out;
 	line-height: 1.2;
-
-	span {
-		position: relative;
-		z-index: 9;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: ${({ theme }) => theme.accentSecondary};
-		bottom: 0;
-		left: 0;
-		z-index: 0;
-		transform: translateY(24%) scaleY(0.42);
-		transition: transform 0.3s ease-out;
-	}
-
-	&:hover {
-		color: ${({ theme }) => theme.accentDarker};
-
-		&::before {
-			transform: translateY(0%) scaleY(1);
-		}
-	}
-`;
-
-export const StyledForm = styled.form`
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	max-width: 576px;
-	margin: 0 auto;
-`;
-
-export const StyledButton = styled(Button)`
-	margin-left: auto;
 `;
 
 export const StyledAttribution = styled.a`
@@ -130,8 +87,4 @@ export const StyledAttribution = styled.a`
 		width: fit-content;
 		padding: 0;
 	}
-`;
-
-export const StyledRequired = styled.span`
-	color: #ff0000;
 `;
