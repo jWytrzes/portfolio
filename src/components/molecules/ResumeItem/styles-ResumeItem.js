@@ -45,11 +45,6 @@ export const StyledTime = styled.span`
 `;
 
 export const StyledParagraph = styled(Paragraph)`
-	font-size: 1.5rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
-
-	@media (min-width: 992px) {
-		font-size: 1.6rem;
-	}
 `;
