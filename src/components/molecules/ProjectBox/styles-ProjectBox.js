@@ -70,6 +70,7 @@ export const StyledButton = styled(Button)`
 	padding: 8px 15px;
 	min-width: 90px;
 	text-decoration: none;
+	line-height: 1.5;
 `;
 
 export const StyledFooter = styled.footer`
