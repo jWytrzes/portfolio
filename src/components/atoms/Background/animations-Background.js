@@ -1,15 +1,5 @@
 import { keyframes } from 'styled-components';
 
-export const scrollAnimation = keyframes`
-	0%, 50%, 100% {
-		transform: translateY(-10%);
-	}
-
-	30% {
-		transform: translateY(40%);
-	}
-`;
-
 export const blob1Wrapper = keyframes`
 	0% {
 		offset-distance: 0%;

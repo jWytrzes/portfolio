@@ -2,27 +2,22 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import SocialMedia from '../../components/molecules/SocialMedia/SocialMedia';
 import { ReactComponent as Illustration404 } from '../../images/404-illustration.svg';
-import mobile404 from '../../images/404-mobile.svg';
-import desktop404 from '../../images/404-desktop.svg';
 
 export const StyledWrapper = styled.div`
-	background: ${({ theme }) => theme.accent} url(${mobile404}) no-repeat
-		top/cover;
+	background: ${({ theme }) => theme.accent};
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-
-	@media (min-width: 992px) {
-		background-image: url(${desktop404});
-	}
 `;
 
 export const StyledInner = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	position: relative;
+	z-index: 10;
 `;
 
 export const StyledIllustration = styled(Illustration404)`
