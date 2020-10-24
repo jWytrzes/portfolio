@@ -4,7 +4,7 @@ import MenuItem from '../../atoms/MenuItem/MenuItem';
 import { StyledNav, StyledUl } from './styles-Navigation';
 
 const menuItems = [
-	{ text: 'Home', link: '#hero' },
+	{ text: 'Home', link: '#' },
 	{ text: 'Projects', link: '#projects' },
 	{ text: 'About', link: '#about' },
 	{ text: 'Resume', link: '#resume' },

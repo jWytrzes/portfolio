@@ -20,7 +20,7 @@ const ContactForm = () => {
 			</FormGroup>
 			<FormGroup>
 				<Input
-					type="text"
+					type="email"
 					id="email"
 					placeholder="your@email.com"
 					name="email"

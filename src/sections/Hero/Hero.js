@@ -3,17 +3,19 @@ import H1 from '../../components/atoms/H1/H1';
 import SocialMedia from '../../components/molecules/SocialMedia/SocialMedia';
 import Menu from '../../components/organisms/Menu/Menu';
 import SectionTemplate from '../../templates/SectionTemplate/SectionTemplate';
+import { ReactComponent as ChevronsDown } from '../../images/chevrons-down.svg';
 import {
 	StyledHeader,
 	StyledSmall,
 	StyledHeroText,
 	StyledScrollLink,
+	StyledHeroBackground,
 } from './styles-Hero';
-import { ReactComponent as ChevronsDown } from '../../images/chevrons-down.svg';
 
 const Hero = () => {
 	return (
-		<StyledHeader id="hero">
+		<StyledHeader>
+			<StyledHeroBackground />
 			<SectionTemplate smallPadding>
 				<Menu />
 				<StyledHeroText>
