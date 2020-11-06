@@ -16,7 +16,7 @@ const Hero = () => {
 	return (
 		<StyledHeader id="hero">
 			<Background />
-			<SectionTemplate smallPadding>
+			<SectionTemplate smallPadding id="heroInner">
 				<Menu />
 				<StyledHeroText>
 					<StyledSmall>Hello, I am</StyledSmall>

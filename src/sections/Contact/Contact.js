@@ -15,7 +15,7 @@ import {
 const Contact = () => {
 	return (
 		<StyledFooter id="contact">
-			<SectionTemplate>
+			<SectionTemplate id="contactInner">
 				<StyledInner>
 					<StyledLeftColumn>
 						<img src={contactIllustration} alt="" />

@@ -81,7 +81,7 @@ const resumeData = {
 const Resume = () => {
 	return (
 		<StyledResume id="resume">
-			<SectionTemplate section="#resume">
+			<SectionTemplate id="resumeInner">
 				<H2> Curriculum Vitae </H2>
 				<div>
 					<Paragraph noTopMargin>

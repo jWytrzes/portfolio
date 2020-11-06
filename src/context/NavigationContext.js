@@ -3,15 +3,10 @@ import React, { useState } from 'react';
 const NavigationContext = React.createContext({ activeSection: '#' });
 
 const NavigationContextProvider = ({ children }) => {
-	const [activeSection, setActiveSection] = useState('#');
+	const [state, setState] = useState({});
 
 	return (
-		<NavigationContext.Provider
-			value={{
-				activeSection,
-				setActiveSection,
-			}}
-		>
+		<NavigationContext.Provider value={[state, setState]}>
 			{children}
 		</NavigationContext.Provider>
 	);

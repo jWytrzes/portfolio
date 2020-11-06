@@ -15,7 +15,7 @@ import {
 const About = () => {
 	return (
 		<StyledAbout id="about">
-			<SectionTemplate verticalCenter>
+			<SectionTemplate verticalCenter id="aboutInner">
 				<H2> About me </H2>
 				<StyledInnerWrapper>
 					<StyledImgWrapper>
