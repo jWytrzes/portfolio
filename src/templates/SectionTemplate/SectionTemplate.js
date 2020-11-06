@@ -38,7 +38,7 @@ const SectionTemplate = ({ smallPadding, verticalCenter, children, id }) => {
 				observer.unobserve(current);
 			}
 		};
-	}, [ref, setState, state.activeSection]);
+	}, [ref, setState, state]);
 
 	return (
 		<StyledWrapper
