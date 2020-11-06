@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import MenuItem from '../../atoms/MenuItem/MenuItem';
 import { StyledNav, StyledUl } from './styles-Navigation';
+import NavigationContext from '../../../context/NavigationContext';
 
 const menuItems = [
 	{ text: 'Home', link: '#' },
@@ -12,6 +13,8 @@ const menuItems = [
 ];
 
 const Navigation = ({ active, toggleMenu }) => {
+	const context = useContext(NavigationContext);
+
 	return (
 		<StyledNav active={active}>
 			<StyledUl>
@@ -20,6 +23,7 @@ const Navigation = ({ active, toggleMenu }) => {
 						item={item}
 						key={item.link}
 						onClick={() => toggleMenu(false)}
+						active={context.activeSection === item.link}
 					/>
 				))}
 			</StyledUl>

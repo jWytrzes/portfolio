@@ -14,7 +14,7 @@ import {
 
 const Hero = () => {
 	return (
-		<StyledHeader>
+		<StyledHeader id="hero">
 			<Background />
 			<SectionTemplate smallPadding>
 				<Menu />

@@ -7,6 +7,7 @@ export const StyledWrapper = styled.div`
 	flex-direction: column;
 	justify-content: ${({ verticalCenter }) =>
 		verticalCenter ? 'center' : 'flex-start'};
+	background-color: ${({ isVisible }) => (isVisible ? 'red' : 'transparent')};
 
 	@media (min-width: 1280px) {
 		max-width: 1250px;

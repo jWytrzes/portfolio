@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'gatsby';
 
 export const StyledLi = styled.li`
@@ -12,19 +12,25 @@ export const StyledLi = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
-	color: ${({ theme }) => theme.textPrimary};
+	color: ${({ theme, active }) => (active ? theme.base : theme.textPrimary)};
 	text-decoration: none;
 	padding: 15px 30px;
+	border-radius: 30px;
+	background-color: ${({ theme, active }) =>
+		active ? theme.accent : 'transparent'};
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	will-change: background-color, color;
 
 	@media (min-width: 992px) {
 		padding: 9px 25px;
-		border-radius: 30px;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		will-change: background-color, color;
 
 		&:hover {
-			background-color: ${({ theme }) => theme.accent};
-			color: ${({ theme }) => theme.base};
+			${({ active }) =>
+				!active &&
+				css`
+					background-color: ${({ theme }) => theme.accentSecondary};
+					color: ${({ theme }) => theme.accent};
+				`}
 		}
 	}
 `;
