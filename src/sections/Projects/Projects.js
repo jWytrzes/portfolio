@@ -35,13 +35,16 @@ const projects = [
 const Projects = () => {
 	return (
 		<StyledProjects id="projects">
-			<SectionTemplate>
+			<SectionTemplate id="projectsInner">
 				<H2> My projects </H2>
 				<div>
 					{projects.map((item) => (
 						<ProjectBox item={item} key={item.title} />
 					))}
-					<StyledRepoLink href="https://github.com/jWytrzes/portfolio">
+					<StyledRepoLink
+						href="https://github.com/jWytrzes/portfolio"
+						target="_blank"
+					>
 						Check out the source code of this website!
 						<StyledArrow />
 					</StyledRepoLink>

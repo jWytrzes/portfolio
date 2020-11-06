@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.7;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     background-color: ${({ theme }) => theme.base};
     color: ${({ theme }) => theme.textPrimary};
 

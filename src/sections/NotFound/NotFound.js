@@ -1,4 +1,5 @@
 import React from 'react';
+import Background from '../../components/atoms/Background/Background';
 import { ReactComponent as HomeIcon } from '../../images/home.svg';
 import {
 	StyledWrapper,
@@ -12,6 +13,7 @@ import {
 const NotFound = () => {
 	return (
 		<StyledWrapper>
+			<Background />
 			<StyledInner>
 				<StyledIllustration aria-label="Error 404. Page not found." />
 				<StyledLinks>

@@ -1,18 +1,12 @@
 import { Link } from 'gatsby';
 import styled, { keyframes } from 'styled-components';
-import mobileHero from '../../images/hero-mobile.svg';
-import desktopHero from '../../images/hero-desktop.svg';
 
 export const StyledHeader = styled.header`
-	background: ${({ theme }) => theme.accent} url(${mobileHero}) no-repeat
-		top/cover;
+	background: ${({ theme }) => theme.accent};
 	color: ${({ theme }) => theme.base};
 	min-height: 100vh;
 	display: flex;
-
-	@media (min-width: 992px) {
-		background-image: url(${desktopHero});
-	}
+	position: relative;
 `;
 
 export const StyledSmall = styled.span`
@@ -45,9 +39,11 @@ export const StyledHeroText = styled.div`
 	text-align: center;
 	width: 100%;
 	margin: auto;
+	position: relative;
+	z-index: 10;
 `;
 
-const scrollAnimation = keyframes`
+export const scrollAnimation = keyframes`
 	0%, 50%, 100% {
 		transform: translateY(-10%);
 	}
