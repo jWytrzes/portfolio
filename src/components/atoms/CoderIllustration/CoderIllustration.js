@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { StyledWrapper } from './styles-CoderIllustration';
+gsap.registerPlugin(ScrollTrigger);
 
 const CoderIllustration = () => {
 	const wrapper = useRef(null);
@@ -16,8 +17,6 @@ const CoderIllustration = () => {
 		const person = elements.getElementById('person');
 		const plant = elements.getElementById('plant');
 		const laptop = elements.getElementById('laptop');
-
-		gsap.registerPlugin(ScrollTrigger);
 
 		gsap.fromTo(
 			laptop,
@@ -91,6 +90,10 @@ const CoderIllustration = () => {
 					start: 'top 60%',
 				},
 			},
+		);
+
+		ScrollTrigger.addEventListener('scrollStart', () =>
+			ScrollTrigger.refresh(),
 		);
 	}, []);
 
