@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
   input, a, button, textarea {
     font-family: inherit;
   }
+
+  .hideBeforeAnimation {
+    visibility:hidden;
+  }
 `;
 
 export default GlobalStyle;
