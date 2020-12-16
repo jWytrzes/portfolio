@@ -14,7 +14,7 @@ const Button = styled.button`
 	line-height: 1;
 	font-size: inherit;
 	cursor: pointer;
-	transition: background-color 0.3s ease-out;
+	transition: background-color 0.2s ease-out;
 	will-change: background-color;
 
 	&:hover {
