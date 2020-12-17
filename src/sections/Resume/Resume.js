@@ -89,7 +89,7 @@ const Resume = () => {
 						you are interested you can download my full CV/resume by clicking
 						the button below.
 					</Paragraph>
-					<Button as="a" href="./Joanna_Wytrzęś_CV.pdf" download>
+					<Button as="a" href={`Joanna_Wytrzęś_CV.pdf`} download>
 						Download CV
 					</Button>
 				</div>
