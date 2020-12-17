@@ -4,7 +4,7 @@ import H2 from '../../components/atoms/H2/H2';
 import SectionTemplate from '../../templates/SectionTemplate/SectionTemplate';
 import Paragraph from '../../components/atoms/Paragraph/Paragraph';
 import Button from '../../components/atoms/Button/Button';
-import { ReactComponent as CoderIllustration } from '../../images/coderIllustration.svg';
+import CoderIllustration from '../../components/atoms/CoderIllustration/CoderIllustration';
 import {
 	StyledAbout,
 	StyledImgWrapper,

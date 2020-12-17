@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionTemplate from '../../templates/SectionTemplate/SectionTemplate';
-import contactIllustration from '../../images/contact-illustration.svg';
 import ContactForm from '../../components/organisms/ContactForm/ContactForm';
+import ContactIllustration from '../../components/atoms/ContactIllustration/ContactIllustration';
 import {
 	StyledFooter,
 	StyledInner,
@@ -18,7 +18,7 @@ const Contact = () => {
 			<SectionTemplate id="contactInner">
 				<StyledInner>
 					<StyledLeftColumn>
-						<img src={contactIllustration} alt="" />
+						<ContactIllustration />
 						<StyledParagraph>
 							Use the form or write me an e-mail: <br />
 							<StyledA href="mailto:joannawytrzes@gmail.com" dark>

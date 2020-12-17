@@ -30,7 +30,7 @@ export const StyledLeftColumn = styled.div`
 	flex-direction: column;
 	justify-content: center;
 
-	img {
+	svg {
 		display: inline-flex;
 		max-width: 90%;
 		margin: auto;

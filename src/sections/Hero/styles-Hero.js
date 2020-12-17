@@ -61,5 +61,16 @@ export const StyledScrollLink = styled(Link)`
 		margin: 0 auto;
 		padding: 10px;
 		animation: ${scrollAnimation} 3s infinite;
+
+		svg g {
+			transition: stroke 0.3s ease-out;
+			will-change: stroke;
+		}
+
+		&:hover {
+			svg g {
+				stroke: ${({ theme }) => theme.textPrimary};
+			}
+		}
 	}
 `;

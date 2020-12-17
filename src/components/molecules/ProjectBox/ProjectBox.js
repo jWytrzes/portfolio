@@ -36,7 +36,7 @@ const ProjectBox = ({ item }) => {
 						<StyledIcon as={CodeIcon} />
 						<StyledLinkText> Code </StyledLinkText>
 					</StyledButton>
-					<StyledButton as="a" target="_blank" href={item.links.repo}>
+					<StyledButton as="a" target="_blank" href={item.links.live}>
 						<StyledIcon as={LinkIcon} />
 						<StyledLinkText> Live </StyledLinkText>
 					</StyledButton>
