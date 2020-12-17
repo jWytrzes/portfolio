@@ -23,16 +23,16 @@ const About = () => {
 					</StyledImgWrapper>
 					<StyledTextWrapper>
 						<Paragraph>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-							lobortis finibus eros quis interdum. In cursus urna dui, non
-							sodales mi blandit at. Aenean sed arcu eu neque suscipit sodales.
-							Nam ac mollis risus. Vestibulum eros lacus, euismod ac ultricies
-							sit amet, ultrices eu purus. Quisque sed aliquam lectus. Nunc est
-							nibh, vehicula eget sodales ac, tincidunt id lectus. Vestibulum
-							sit amet tincidunt tortor. Sed sit amet nulla metus.Lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. Quisque lobortis
-							finibus eros quis interdum. In cursus urna dui, non sodales mi
-							blandit at. Aenean sed arcu eu neque suscipit sodales.
+							My name is Joanna Wytrzęś and I am a frontend developer on
+							junior/early-mid level based in Rzeszów, Poland. Currently I am
+							studying Computer Science and working part time. In my work I
+							mailny use HTML, CSS and JavaScript with libraries such as jQuery
+							and Bootstrap. But outside the workplace, I constantly try to
+							develop and learn modern technologies and I truly enjoy it.
+							Besides coding I am interested in design, especially web and app
+							design and also interior design. I also love reading good
+							science-fiction books. That's all about me, if you want to know
+							more, check out my projects and resume. Enjoy!
 						</Paragraph>
 						<Button as={Link} to="#resume">
 							See my resume
