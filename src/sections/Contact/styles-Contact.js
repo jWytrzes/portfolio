@@ -32,22 +32,30 @@ export const StyledLeftColumn = styled.div`
 
 	svg {
 		display: inline-flex;
-		max-width: 90%;
+		max-width: 23.9rem;
 		margin: auto;
+		height: auto;
 	}
 
 	@media (min-width: 768px) {
 		flex: 0 0 50%;
 		padding-right: 25px;
+
+		svg {
+			max-width: 90%;
+		}
 	}
 `;
 
 export const StyledRightColumn = styled.div`
+	margin-top: 3rem;
+
 	@media (min-width: 768px) {
 		flex: 0 0 50%;
 		display: flex;
 		align-items: center;
 		padding-left: 25px;
+		margin-top: 0;
 	}
 `;
 
