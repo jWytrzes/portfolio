@@ -35,6 +35,7 @@ const resumeData = {
 		'JavaScript',
 		'ReactJS',
 		'git',
+		'basic knowledge of unix system',
 		'Adobe XD, Figma',
 		'English B2/C1',
 		'teamwork',
