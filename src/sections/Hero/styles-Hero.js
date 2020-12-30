@@ -55,6 +55,7 @@ export const scrollAnimation = keyframes`
 
 export const StyledScrollLink = styled(Link)`
 	display: none;
+	opacity: 0;
 
 	@media (min-width: 992px) {
 		display: flex;

@@ -19,18 +19,20 @@ const Hero = () => {
 	const smallTextRef = useRef(null);
 	const smallText2Ref = useRef(null);
 	const bigTextRef = useRef(null);
+	const arrow = useRef(null);
 
 	useEffect(() => {
 		gsap.set(menuRef.current, { y: '-=100', autoAlpha: 0 });
 		gsap.set(socialMediaRef.current, { x: '+=100', autoAlpha: 0 });
 		gsap.set([smallTextRef.current, smallText2Ref.current], { autoAlpha: 0 });
 		gsap.set(bigTextRef.current, { scale: 0, autoAlpha: 0 });
+		gsap.set(arrow.current, { autoAlpha: 0 });
 
 		const menuSMCommonOptions = {
 			autoAlpha: 1,
 			ease: 'expo.out',
 			duration: 0.7,
-			delay: 2.2,
+			delay: 1.5,
 		};
 		gsap.to(menuRef.current, {
 			y: 0,
@@ -47,15 +49,21 @@ const Hero = () => {
 		};
 		gsap.to([smallTextRef.current, smallText2Ref.current], {
 			duration: 1,
-			stagger: 1.3,
-			delay: 0.2,
+			stagger: 1,
+			delay: 0.1,
 			...textCommonOptions,
 		});
 
 		gsap.to(bigTextRef.current, {
 			scale: 1,
-			delay: 0.7,
-			duration: 0.7,
+			delay: 0.5,
+			duration: 0.5,
+			...textCommonOptions,
+		});
+
+		gsap.to(arrow.current, {
+			delay: 1.8,
+			duration: 2,
 			...textCommonOptions,
 		});
 	}, []);
@@ -77,7 +85,7 @@ const Hero = () => {
 						front-end developer
 					</StyledSmall>
 				</StyledHeroText>
-				<StyledScrollLink to="#projects">
+				<StyledScrollLink to="#projects" ref={arrow}>
 					<ChevronsDown />
 				</StyledScrollLink>
 				<SocialMedia ref={socialMediaRef} className="hideBeforeAnimation" />

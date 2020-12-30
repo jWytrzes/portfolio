@@ -28,3 +28,13 @@ export const StyledIcon = styled.svg`
 		width: 36px;
 	}
 `;
+
+export const StyledIconStroke = styled(StyledIcon)`
+	fill: none;
+
+	[stroke] {
+		fill: none;
+		stroke: ${({ theme }) => theme.base};
+		transition: stroke 0.2s ease-in-out;
+	}
+`;

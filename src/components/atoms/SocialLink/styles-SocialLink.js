@@ -5,7 +5,7 @@ export const StyledLi = styled.li`
 
 	@media (min-width: 992px) {
 		margin-left: 0;
-		margin-top: 48px;
+		margin-top: 40px;
 	}
 `;
 
@@ -16,13 +16,25 @@ export const StyledA = styled.a`
 	height: fit-content;
 	padding: 5px;
 
-	svg path {
-		transition: fill 0.3s ease-out;
+	svg {
+		[stroke] {
+			transition: stroke 0.3s ease-out;
+		}
+
+		[fill] {
+			transition: fill 0.3s ease-out;
+		}
 	}
 
 	&:hover {
-		svg path {
-			fill: ${({ theme }) => theme.textPrimary};
+		svg {
+			[stroke] {
+				stroke: ${({ theme }) => theme.textPrimary};
+			}
+
+			[fill] {
+				fill: ${({ theme }) => theme.textPrimary};
+			}
 		}
 	}
 `;

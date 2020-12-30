@@ -22,6 +22,11 @@ const FormGroup = styled.div`
 			font-size: 1.4rem;
 		}
 	}
+
+	textarea {
+		resize: vertical;
+		max-width: 100%;
+	}
 `;
 
 export default FormGroup;

@@ -15,6 +15,7 @@ import {
 	StyledLangs,
 	StyledInnerColumn,
 } from './styles-Resume';
+import cvFile from './Joanna_Wytrzes_CV.pdf';
 
 const resumeData = {
 	experience: [
@@ -35,6 +36,7 @@ const resumeData = {
 		'JavaScript',
 		'ReactJS',
 		'git',
+		'basic knowledge of unix system',
 		'Adobe XD, Figma',
 		'English B2/C1',
 		'teamwork',
@@ -89,7 +91,7 @@ const Resume = () => {
 						you are interested you can download my full CV/resume by clicking
 						the button below.
 					</Paragraph>
-					<Button as="a" href={`Joanna_Wytrzęś_CV.pdf`} download>
+					<Button as="a" href={cvFile} download>
 						Download CV
 					</Button>
 				</div>
