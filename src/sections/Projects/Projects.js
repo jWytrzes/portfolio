@@ -5,6 +5,7 @@ import ProjectBox from '../../components/molecules/ProjectBox/ProjectBox';
 import { StyledProjects, StyledRepoLink, StyledArrow } from './styles-Projects';
 import solfranMockup from '../../images/projects/solfranMockup.png';
 import moodtrackerMockup from '../../images/projects/mood-trackerMockup.png';
+import paletaMockup from '../../images/projects/paletaMockup.png';
 
 const projects = [
 	{
@@ -27,8 +28,18 @@ const projects = [
 			repo: 'https://github.com/jWytrzes/mood-tracker',
 			live: 'https://moodtracker-24d44.web.app/',
 		},
-
 		picture: moodtrackerMockup,
+	},
+	{
+		title: 'Paleta Smaków',
+		description:
+			"A restaurant's website created using Next.js. The backend is provided by Strapi. Admin panel allows to edit homepage content and to manage news, gallery page and menu",
+		tags: ['React', 'Next.js', 'Strapi'],
+		links: {
+			// repo: 'https://github.com/jWytrzes/mood-tracker',
+			live: 'https://www.paleta-smakow.pl/',
+		},
+		picture: paletaMockup,
 	},
 ];
 

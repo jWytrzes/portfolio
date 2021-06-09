@@ -32,14 +32,18 @@ const ProjectBox = ({ item }) => {
 				<H3> {item.title} </H3>
 				<StyledP> {item.description} </StyledP>
 				<StyledFooter>
-					<StyledButton as="a" target="_blank" href={item.links.repo}>
-						<StyledIcon as={CodeIcon} />
-						<StyledLinkText> Code </StyledLinkText>
-					</StyledButton>
-					<StyledButton as="a" target="_blank" href={item.links.live}>
-						<StyledIcon as={LinkIcon} />
-						<StyledLinkText> Live </StyledLinkText>
-					</StyledButton>
+					{item.links.repo && (
+						<StyledButton as="a" target="_blank" href={item.links.repo}>
+							<StyledIcon as={CodeIcon} />
+							<StyledLinkText> Code </StyledLinkText>
+						</StyledButton>
+					)}
+					{item.links.live && (
+						<StyledButton as="a" target="_blank" href={item.links.live}>
+							<StyledIcon as={LinkIcon} />
+							<StyledLinkText> Live </StyledLinkText>
+						</StyledButton>
+					)}
 				</StyledFooter>
 			</StyledContentWrapper>
 		</StyledArticle>

@@ -25,8 +25,8 @@ const About = () => {
 						<Paragraph>
 							My name is Joanna Wytrzęś and I am a frontend developer on
 							junior/early-mid level based in Rzeszów, Poland. Currently I am
-							studying Computer Science and working part time. In my work I
-							mailny use HTML, CSS and JavaScript with libraries such as jQuery
+							studying Computer Science and working part time. At my last job I
+							mailny used HTML, CSS and JavaScript with libraries such as jQuery
 							and Bootstrap. But outside the workplace, I constantly try to
 							develop and learn modern technologies and I truly enjoy it.
 							Besides coding I am interested in design, especially web and app
