@@ -20,8 +20,14 @@ import cvFile from './Joanna_Wytrzes_CV.pdf';
 const resumeData = {
 	experience: [
 		{
+			title: 'Freelance Frontend Developer',
+			time: 'february 2020 - present',
+			description:
+				'Implemented websites and landing pages from UI design through deployment, including RWD and the best possible UX',
+		},
+		{
 			title: 'Frontend Developer',
-			time: 'november 2017 - present | Internet Art | 1/2 time',
+			time: 'november 2017 - may 2021 | Internet Art | 1/2 time',
 			description:
 				'Creating websites templates using HTML, CSS, JavaScript, jQuery, Bootstrap',
 		},
